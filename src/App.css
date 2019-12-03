@@ -1,22 +1,181 @@
-.App {
-  text-align: center;
+:root {
+  --Black: #292826;
+  --White: #f3f3f3;
+  --Yellow: #f9d342;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Josefin Sans' !important;
+  background: var(--White) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-title {
+  font-family: 'Courgette';
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: gray;
+  font-weight: 600;
+}
+
+.font {
+  font-family: 'Alatsi';
+  font-size: 1.4rem;
+}
+
+.main-yellow {color: var(--Yellow);}
+.main-red {
+  color: crimson;
+  font-family: "Courgette";
+}
+
+nav{
+  background: var(--Black) !important;
+}
+
+.cart-button {
+  font-size: 1.3rem;
+  background: transparent;
+  font-family: 'Alatsi';
+  border: 0.12rem solid var(--Yellow);
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem;
+  transition: all 600ms;
+  color: var(--Yellow);
+}
+
+.cart-button:hover {
+  background: var(--Yellow);
+  color: var(--Black);
+}
+
+.cart-button:focus, .button1:focus, .button2:focus {
+  outline: none;
+}
+
+.card {
+  border-color: transparent !important;
+  transition: all .7s linear !important;
+  border: 0.1rem solid rgba(0,0,0, .2) !important;
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0, .2);
+}
+
+.card-footer {
+  background: transparent !important;
+  border-top: transparent !important;
+  transition: all .7s linear !important;
+  background: rgb(233, 233, 233) !important;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-top {transition: 1s;}
+
+.img-container:hover .card-img-top{
+  transform: scale(1.1);
+}
+
+.cart-btn {
+  position: absolute;
+  width:100%;
+  bottom: 0;
+  left: 0;
+  height: 28px;
+  background: var(--Black);
+  color: var(--Yellow);
+  border: none;
+  font-size: 1.1rem;
+}
+
+.title {
+  font-family: 'Alatsi';
+  font-size: 1.2rem;
+  color: rgb(85, 85, 85);
+}
+
+.price {
+  font-weight: bold;
+}
+
+.button1 {
+  background: transparent;
+  color: #292826;
+  border: 2px solid #292826;
+  padding: 0.15rem 0.4rem;
+  font-family: 'Alatsi';
+  transition: 0.7s;
+  font-size: 1.15rem;
+}
+
+.button1:hover {
+  color: #292826;
+  background: #f9d342;
+  border-color: #f9d342;
+}
+
+.button2 {
+  background: transparent;
+  color: #292826;
+  border: 2px solid #292826;
+  padding: 0.15rem 0.4rem;
+  font-family: 'Alatsi';
+  transition: all 0.7s;
+  margin-left: 20px;
+  font-size: 1.15rem;
+}
+
+.button2:hover {
+  color: #fff;
+  background: #292826;
+}
+
+#modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0, .3);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+#modalOpen {
+  background: #fff;
+  outline: 3px solid #f9d342;
+  outline-offset: 3px;
+}
+
+.checked {
+  color: green;
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 1.5rem;
+  margin-top: 18px;
+}
+
+.btn-black {
+  background: transparent;
+  border: 2px solid #292826 !important;
+  font-size: 1.5rem !important;
+  border-radius: 0 !important;
+  padding: 0px 10px !important;
+}
+
+.btn-black:hover {
+  background: #292826 !important;
+  color: #fff !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: crimson;
 }
